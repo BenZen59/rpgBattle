@@ -22,7 +22,7 @@ export default function Attack({ propsPv, propsPvMax }) {
   }
 
   function calculHit() {
-    if (Pv >= 11) {
+    if (Pv >= 1) {
       return Math.round(((PvMax - (PvMax - Pv)) * 100) / PvMax);
     }
     return 0;
@@ -31,7 +31,7 @@ export default function Attack({ propsPv, propsPvMax }) {
   function attackClick() {
     if (Pv > 0) {
       const D20 = Math.floor(Math.random() * (20 - 1)) + 1;
-      const attack = 200;
+      const attack = 10;
       setPv(Pv - Math.round(D20 * attack));
       document.documentElement.style.setProperty(
         '--progress',

@@ -1,0 +1,16 @@
+@font-face {
+  font-family: 'Runic MT Condensed';
+  src: url('../../fonts/Runic MT Condensed.ttf') format('truetype');
+}
+
+.spriteEnemy{
+  float: right;
+  padding-top: 50px;
+  padding-right: 180px;
+}
+
+.name{
+  font-size: 40px;
+  margin-left: 1470px;
+  font-family: 'Runic MT Condensed', sans-serif;
+}

@@ -1,51 +1,48 @@
+@font-face {
+  font-family: 'Runic MT Condensed';
+  src: url('../../fonts/Runic MT Condensed.ttf') format('truetype');
+}
 :root {
   --progress:
 }
 
 button{
-  width: 125px;
+  width: 113px;
   height: 50px;
-  margin: 20px;
-  font-size: 20px;
-}
-
-h2, h3 {
-  margin: 20px;
-  font-size:25px;
-}
-
-img {
-  
-  border: 2px solid black;
-  width: 200px;
-  height: 200px;
-  margin-left: 20px;
-}
-
-.description{
-  margin-left: 20px;
+  font-size: 30px;
+  border: 2px outset #C7C7C7;
+  border-radius: 2px;
+  background: #5252AD;
+  background: -moz-linear-gradient(top, #5252AD 0%, #21217B 50%, #000052 100%);
+  background: -webkit-linear-gradient(top, #5252AD 0%, #21217B 50%, #000052 100%);
+  background: linear-gradient(to bottom, #5252AD 0%, #21217B 50%, #000052 100%);
+  color: #FFFFFF;
+  text-shadow: black 0.1em 0.1em 0.2em;
+  font-family: 'Runic MT Condensed', sans-serif;
 }
 
 .BarreDeVie{
-  width: 500px;
-  height: 50px;
+  width: 250px;
+  height: 25px;
   border: 2px solid black;
-  border-radius: 50px;
   vertical-align: middle;
-  margin-left: 20px;
-  font-size: 30px;
+  margin-left: 1380px;
+  font-size: 22px;
+  font-family: 'Runic MT Condensed', sans-serif;
+  
 }
 
 .PV{
   width: var(--progress);
-  height: 51.5px;
-  background-color: green;
+  height: 25.4px;
+  background: #FF0101;
+  background: -moz-linear-gradient(left, #FF0101 0%, #BE0000 50%, #6A0000 100%);
+  background: -webkit-linear-gradient(left, #FF0101 0%, #BE0000 50%, #6A0000 100%);
+  background: linear-gradient(to right, #FF0101 0%, #BE0000 50%, #6A0000 100%);
   text-align: center;
-  margin-top: -1px;
-  margin-left: -1px;
-  border-radius: 50px;
+  margin-top: -0.2px;
 }
 .Attack{
-  margin-top: -20px;
-  margin-left: 205px;
+  margin-top: 5px;
+  margin-left: 1450px;
 }
