@@ -1,8 +1,11 @@
 import { useEffect, useState } from 'react';
+import { PropTypes } from 'prop-types';
+import './style.css';
 
-export default function Attack() {
-  const [Pv, setPv] = useState(9999);
-  const [PvMax, setPvMax] = useState(9999);
+export default function Attack({ propsPv, propsPvMax }) {
+  console.log(propsPv, propsPvMax);
+  const [Pv, setPv] = useState(propsPv);
+  const [PvMax, setPvMax] = useState(propsPvMax);
 
   useEffect(() => {
     const width = getComputedStyle(document.documentElement).getPropertyValue(
@@ -28,7 +31,7 @@ export default function Attack() {
   function attackClick() {
     if (Pv > 0) {
       const D20 = Math.floor(Math.random() * (20 - 1)) + 1;
-      const attack = 20;
+      const attack = 200;
       setPv(Pv - Math.round(D20 * attack));
       document.documentElement.style.setProperty(
         '--progress',
@@ -53,3 +56,8 @@ export default function Attack() {
     </>
   );
 }
+
+Attack.propTypes = {
+  propsPv: PropTypes.number.isRequired,
+  propsPvMax: PropTypes.number.isRequired,
+};
